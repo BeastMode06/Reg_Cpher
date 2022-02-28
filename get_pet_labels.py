@@ -47,7 +47,9 @@ def get_pet_labels(image_dir):
     # Processes each of the files to create a dictionary where the key							
     # is the filename and the value is the picture label (below).							
  							
-    # Creates empty dictionary for the results (pet labels, etc.)							
+    # Creates empty dictionary for the results (pet labels, etc.)
+	
+    results_dic = dic()
     petlabels_dic = dic()							
    							
     # Processes through each file in the directory, extracting only the words							
@@ -116,4 +118,4 @@ def get_pet_labels(image_dir):
     
     # Replace None with the results_dic dictionary that you created with this
     # function
-    return None
+    #return None
