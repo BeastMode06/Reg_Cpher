@@ -83,7 +83,13 @@ def get_pet_labels(image_dir):
               							
            else:							
                print("** Warning: Duplicate files exist in directory:", 							
-                     in_files[idx])							
+                     in_files[idx])	
+	
+    # Iterate through a dictionary printing all keys and their associated values						
+	print("\nPrinting all key-value pairs in dictionary results_dic:")					
+	for key in results_dic:					
+	print("Filename=", key, " Pet label=", results_dic[key][0])					
+
  							
     # TODO 2b. Replace None with the results_dic dictionary that you created							
     # with this function							
