@@ -82,7 +82,7 @@ for idx in range(0, len(in_files), 1):
        if in_files[idx][0] != ".":							
            							
            # Creates temporary label variable to hold pet label name extracted 							
-           						
+          petlabels_dic = dict()   						
 							
            # TODO: 2a. BELOW REPLACE pass with CODE that will process each 							
            #          filename in the in_files list to extract the dog breed 							
@@ -91,7 +91,7 @@ for idx in range(0, len(in_files), 1):
            #          extracted dog breed name in the variable pet_label 							
            #          that's created as an empty string ABOVE							
  							
-	 pet_image =  "Boston_terrier_02259.jpg"
+	pet_image =  "Boston_terrier_02259.jpg"
         low_pet_image = pet_image.lower()						
         letters_list_pet_image = low_pet_image.split("_")	
            #Create pet_name starting as empty string
