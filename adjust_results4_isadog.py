@@ -96,7 +96,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             # adds dogname(line) to dogsnames_dic if it doesn't already exist 											
             # in the dogsnames_dic dictionary											
          if line not in dognames_dic:										
-		dognames_dic.update(line:" ")									
+		dognames_dic.update({line: 1})									
 											
 											
 											
