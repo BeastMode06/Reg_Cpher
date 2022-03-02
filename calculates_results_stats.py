@@ -67,19 +67,27 @@ def calculates_results_stats(results_dic):
                      and the value is the statistic's value. See comments above
                      and the previous topic Calculating Results in the class for details
                      on how to calculate the counts and statistics.
+		     The results statistics dictionary will have the following format:
+                     key = statistic's name (e.g. n_correct_dogs, pct_correct_dogs, n_correct_breed, pct_correct_breed)
+                     value = statistic's value (e.g. 30, 100%, 24, 80%)
+                     example_dictionary = {'n_correct_dogs': 30, 'pct_correct_dogs': 100.0, 'n_correct_breed': 24, 'pct_correct_breed': 80.0    
+		     
     """   
     
     
-      # Creates empty dictionary for results_stats_dic							
-    results_stats_dic = dict()							
-    							
-    # Sets all counters to initial values of zero so that they can 							
-    # be incremented while processing through the images in results_dic 							
-    results_stats_dic['n_dogs_img'] = 0							
-    results_stats_dic['n_match'] = 0							
-    results_stats_dic['n_correct_dogs'] = 0							
-    results_stats_dic['n_correct_notdogs'] = 0							
-    results_stats_dic['n_correct_breed'] = 0       							
+       						
+        # Creates empty dictionary for results_stats_dic										
+    results_stats_dic = dict()										
+    										
+    # Sets all counters to initial values of zero so that they can 										
+    # be incremented while processing through the images in results_dic 										
+    results_stats_dic['n_dogs_img'] = 0										
+    results_stats_dic['n_match'] = 0										
+    results_stats_dic['n_correct_dogs'] = 0										
+    results_stats_dic['n_correct_notdogs'] = 0										
+    results_stats_dic['n_correct_breed'] = 0       										
+
+    # 						
     							
     # process through the results dictionary							
     for key in results_dic:							
