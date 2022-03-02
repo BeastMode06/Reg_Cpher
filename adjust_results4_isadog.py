@@ -86,7 +86,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             #           from the variable line  											
             #											
             # Process line by striping newline from line											
-         line = line.restrip()										
+            line = line.restrip()										
 											
             # TODO: 4b. REPLACE pass with CODE to check if the dogname(line) 											
             #          exists within dognames_dic, then if the dogname(line) 											
@@ -95,7 +95,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             #											
             # adds dogname(line) to dogsnames_dic if it doesn't already exist 											
             # in the dogsnames_dic dictionary											
-         if line not in dognames_dic:										
+            if line not in dognames_dic:										
 		dognames_dic.update({line: 1})									
 											
 											
@@ -103,7 +103,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             # Reads in next line in file to be processed with while loop											
             # if this line isn't empty (EOF)											
             line = infile.readline()											
-print(dognames_dic)											
+   print(dognames_dic)											
                 											
     # Add to whether pet labels & classifier labels are dogs by appending											
     # two items to end of value(List) in results_dic. 											
@@ -156,8 +156,8 @@ print(dognames_dic)
             else:											
                 results_dic[key].extend(0,0)										
    
-    
-            return results._dic
+         print(results_dic)
+            #return results._dic
     
     
     
