@@ -99,7 +99,7 @@ def main():
     
     # Computes overall runtime in seconds & prints it in hh:mm:ss format
     tot_time = end_time - start_time
-    print("\n** Total Elapsed Runtime:",
+    print("\nTotal Elapsed Runtime:",
           str(int((tot_time/3600)))+":"+str(int((tot_time%3600)/60))+":"
           +str(int((tot_time%3600)%60)) )
     
