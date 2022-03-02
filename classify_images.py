@@ -70,7 +70,7 @@ def classify_images(images_dir, results_dic, model):
 
 
 
-    """
+    
     # Process all files in the results_dic - use images_dir to give fullpath
     # that indicates the folder and the filename (key) to be used in the 
     # classifier function
