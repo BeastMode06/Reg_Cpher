@@ -66,18 +66,18 @@ def get_pet_labels(image_dir):
     # Skips file if starts with . (like .DS_Store of Mac OSX) because it 									
     # isn't an pet image file									
     
-    if in_files[idx][0] != ".":
+    	if in_files[idx][0] != ".":
 
         # Creates temporary label variable to hold pet label name extracted 									
      
-        pet_name= ""  						
-        pet_image ="Boston_terrier_02259.jpg"
-        low_pet_image = pet_image.lower()						
-        letters_list_pet_image = low_pet_image.split("_")	
-        for letters in letters_list_pet_image:
-            if letters.isalpha():
-                pet_label += letters + " "
-        pet_label = pet_label.strip()        
+            pet_name= ""  						
+       	    pet_image ="Boston_terrier_02259.jpg"
+            low_pet_image = pet_image.lower()						
+            letters_list_pet_image = low_pet_image.split("_")	
+            for letters in letters_list_pet_image:
+                if letters.isalpha():
+                    pet_label += letters + " "
+            pet_label = pet_label.strip()        
 																	
           
                 
