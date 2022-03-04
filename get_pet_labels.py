@@ -70,12 +70,12 @@ def get_pet_labels(image_dir):
 
         # Creates temporary label variable to hold pet label name extracted 									
      
-            pet_name= ""  						
-       	    pet_image ="Boston_terrier_02259.jpg"
+            pet_label= ""  						
+       	    pet_image = in_files[idx]
             low_pet_image = pet_image.lower()						
-            letters_list_pet_image = low_pet_image.split("_")	
-            for letters in letters_list_pet_image:
-                if letters.isalpha():
+            word_list_pet_image = low_pet_image.split("_")	
+            for word in word_list_pet_image:
+                if word.isalpha():
                     pet_label += letters + " "
             pet_label = pet_label.strip()        
 																	
