@@ -157,9 +157,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             else:											
                 results_dic[key].extend((0,0))										
    
-        print(results_dic)
-            #return results._dic
-    
+         
     
     
     
